@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temporary Task Manager</title>
+</head>
+<body>
+    <header>
+        <h1>Temporary Task Manager (reset on refresh)</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="task-form">
+                <input placeholder="Task Name..." id="name" type="text">
+                <select id="status">
+                    <option value="Low Priority">Low Priority</option>
+                    <option value="Medium Priority">Medium Priority</option>
+                    <option value="High Priority">High Priority</option>
+                </select>
+                <input id="append" type="button" value="Add">
+            </div>
+            <div class="task-output">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Dhiya Urrahman, All right reserved</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="taskManager.js" ></script>
+</body>
+</html>
